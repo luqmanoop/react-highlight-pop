@@ -1,0 +1,20 @@
+{
+  "name": "react-highlight-pop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeshifu/react-highlight-pop.git"
+  },
+  "keywords": [],
+  "author": "Luqman Olushi <olushilukmon03@gmail.com> (https://codeshifu.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeshifu/react-highlight-pop/issues"
+  },
+  "homepage": "https://github.com/codeshifu/react-highlight-pop#readme"
+}
