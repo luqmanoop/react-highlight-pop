@@ -1,0 +1,7 @@
+{
+  "setupFiles": ["<rootDir>/src/__tests__/setup.js"],
+  "moduleNameMapper": {
+    "\\.(css)$": "<rootDir>/src/__tests__/__mocks__/style.js"
+  },
+  "testMatch": ["./**/*.(test|spec).(js|jsx)"]
+}

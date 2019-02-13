@@ -10,7 +10,7 @@
     "clean": "rimraf dist",
     "commit": "npx git-cz",
     "build": "npm run clean && rollup -c",
-    "test": "jest"
+    "test": "jest --config=jest.config.json"
   },
   "files": [
     "dist",
@@ -44,11 +44,14 @@
     "@babel/preset-env": "7.3.1",
     "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.1",
+    "babel-jest": "^24.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
     "eslint": "5.13.0",
     "eslint-plugin-react": "7.12.4",
-    "enzyme": "3.8.0",
-    "enzyme-adapter-react-16": "1.9.1",
     "jest": "24.1.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "rimraf": "2.6.3",
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
