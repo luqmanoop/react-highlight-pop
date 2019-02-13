@@ -1,7 +1,7 @@
 {
   "name": "react-highlight-pop",
   "version": "1.0.0",
-  "description": "A configurable React component for 'medium-like' text highlight",
+  "description": "React component for 'medium-like' text highlight",
   "main": "dist/react-highlight-pop.js",
   "module": "dist/react-highlight-pop-es.js",
   "umd": "dist/react-highlight-pop-umd.js",
