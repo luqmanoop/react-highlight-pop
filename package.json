@@ -10,6 +10,7 @@
     "clean": "rimraf dist",
     "commit": "npx git-cz",
     "build": "npm run clean && rollup -c",
+    "report-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
   "files": [
@@ -45,11 +46,11 @@
     "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "24.1.0",
+    "coveralls": "3.0.2",
     "eslint": "5.13.0",
     "eslint-plugin-react": "7.12.4",
     "jest": "24.1.0",
     "jest-dom": "3.1.1",
-    "prop-types": "15.7.2",
     "react": "16.8.1",
     "react-dom": "16.8.1",
     "react-testing-library": "5.8.0",
@@ -60,8 +61,7 @@
     "rollup-plugin-postcss": "2.0.3"
   },
   "peerDependencies": {
-    "react": "16.x",
-    "prop-types": "15.x"
+    "react": "16.x"
   },
   "jest": {
     "collectCoverageFrom": [

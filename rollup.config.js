@@ -7,7 +7,7 @@ const sourcemap = true;
 
 export default {
   input: 'src/lib/index.js',
-  external: ['react', 'prop-types'],
+  external: ['react'],
   plugins: [
     postcss({ plugins: [] }),
     babel({
@@ -32,8 +32,7 @@ export default {
       name: 'react-highlight-pop',
       sourcemap,
       globals: {
-        react: 'react',
-        'prop-types': 'PropTypes'
+        react: 'react'
       }
     }
   ]

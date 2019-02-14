@@ -8,3 +8,8 @@ node_js:
   - '10'
 script:
   - npm run test
+after_success:
+  - npm run report-coverage
+branches:
+  only: master
+  except: /^v\d+\.\d+\.\d+$/
