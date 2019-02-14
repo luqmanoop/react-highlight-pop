@@ -42,9 +42,13 @@
     "@babel/plugin-proposal-class-properties": "7.3.0",
     "@babel/preset-env": "7.3.1",
     "@babel/preset-react": "7.0.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.13.0",
+    "eslint-plugin-react": "7.12.4",
     "rimraf": "2.6.3",
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-eslint": "5.0.0",
     "rollup-plugin-postcss": "2.0.3"
   },
   "peerDependencies": {
