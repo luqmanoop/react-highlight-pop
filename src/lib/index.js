@@ -1,5 +1,4 @@
 import React, { Component, createRef } from 'react';
-import PropTypes from 'prop-types';
 import './style.css';
 
 class HighlightPop extends Component {
@@ -113,14 +112,8 @@ class HighlightPop extends Component {
 HighlightPop.defaultProps = {
   onHighlightComment: null,
   onExitHighlight: null,
-  popoverItems: null
-};
-
-HighlightPop.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.node]).isRequired,
-  popoverItems: PropTypes.func,
-  onHighlightPop: PropTypes.func,
-  onExitHighlightPop: PropTypes.func
+	popoverItems: null,
+	children: null
 };
 
 export default HighlightPop;
