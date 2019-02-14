@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
+import { eslint } from 'rollup-plugin-eslint';
 import pkg from './package.json';
 
 const sourcemap = true;
@@ -8,10 +9,11 @@ export default {
   input: 'src/lib/index.js',
   external: ['react', 'prop-types'],
   plugins: [
+    postcss({ plugins: [] }),
     babel({
       exclude: 'node_modules/**'
     }),
-    postcss({ plugins: [] })
+    eslint({ throwOnError: true }),
   ],
   output: [
     {
@@ -31,6 +33,7 @@ export default {
       sourcemap,
       globals: {
         react: 'react',
+        'prop-types': 'PropTypes'
       }
     }
   ]
