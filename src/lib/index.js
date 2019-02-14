@@ -29,13 +29,14 @@ class HighlightPop extends Component {
 
   onMouseUp = () => {
     const selection = window.getSelection();
-    const selectionRange = selection.getRangeAt(0);
     const selectedText = selection.toString().trim();
 
     if (!selectedText) {
       this.hidePopover();
       return;
     }
+
+		const selectionRange = selection.getRangeAt(0);
 
     const startNode = selectionRange.startContainer.parentNode;
     const endNode = selectionRange.endContainer.parentNode;
@@ -77,9 +78,9 @@ class HighlightPop extends Component {
       showPopover: true
     });
 
-    const { onHighlightPop = () => {} } = this.props;
-    onHighlightPop(selectedText);
-  };
+		const { onHighlightPop = () => {} } = this.props;
+		onHighlightPop(selectedText);
+	};
 
   render() {
     const { showPopover, x, y } = this.state;
@@ -98,7 +99,7 @@ class HighlightPop extends Component {
               popoverItems(itemClass)
             ) : (
               <span role="button" className={itemClass}>
-                Twitter
+                Add yours
               </span>
             )}
           </div>

@@ -44,11 +44,15 @@
     "@babel/preset-env": "7.3.1",
     "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.1",
+    "babel-jest": "24.1.0",
     "eslint": "5.13.0",
     "eslint-plugin-react": "7.12.4",
-    "enzyme": "3.8.0",
-    "enzyme-adapter-react-16": "1.9.1",
     "jest": "24.1.0",
+    "jest-dom": "3.1.1",
+    "prop-types": "15.7.2",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
+    "react-testing-library": "5.8.0",
     "rimraf": "2.6.3",
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
@@ -58,5 +62,17 @@
   "peerDependencies": {
     "react": "16.x",
     "prop-types": "15.x"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/lib/**/*.js",
+      "!**/node_modules/**"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
