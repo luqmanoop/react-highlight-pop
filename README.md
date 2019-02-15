@@ -6,7 +6,7 @@
 [![](https://img.shields.io/coveralls/github/codeshifu/react-highlight-pop.svg?style=popout)](https://coveralls.io/github/codeshifu/react-highlight-pop)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-A configurable text highlight component with zero dependencies.
+A configurable text highlight component with zero dependencies
 
 ![demo](https://user-images.githubusercontent.com/5154605/52847235-ebae9800-310b-11e9-9387-e3797fa4bdae.gif)
 
