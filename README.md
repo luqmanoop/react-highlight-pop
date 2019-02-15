@@ -8,6 +8,8 @@
 
 A configurable text highlight component with zero dependencies.
 
+![demo](https://user-images.githubusercontent.com/5154605/52847235-ebae9800-310b-11e9-9387-e3797fa4bdae.gif)
+
 ## Installation
 ```bash
 npm install react-highlight-pop
