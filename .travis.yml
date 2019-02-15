@@ -9,7 +9,9 @@ node_js:
 script:
   - npm run test
 after_success:
+  - npm run build
   - npm run report-coverage
+  - npx semantic-release
 branches:
   only: master
   except: /^v\d+\.\d+\.\d+$/

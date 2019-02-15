@@ -1,6 +1,6 @@
 {
   "name": "react-highlight-pop",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "React component for 'medium-like' text highlight",
   "main": "dist/react-highlight-pop.js",
   "module": "dist/react-highlight-pop-es.js",
@@ -11,7 +11,8 @@
     "commit": "git-cz",
     "build": "npm run clean && rollup -c",
     "report-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist",
@@ -20,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeshifu/react-highlight-pop.git"
+    "url": "https://github.com/codeshifu/react-highlight-pop.git"
   },
   "keywords": [
     "react",
@@ -61,7 +62,8 @@
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-eslint": "5.0.0",
     "rollup-plugin-postcss": "2.0.3",
-    "rollup-plugin-terser": "4.0.4"
+    "rollup-plugin-terser": "4.0.4",
+    "semantic-release": "^15.13.3"
   },
   "peerDependencies": {
     "react": "16.x"
