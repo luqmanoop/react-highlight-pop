@@ -8,7 +8,7 @@
   "source": "src/lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "commit": "npx git-cz",
+    "commit": "git-cz",
     "build": "npm run clean && rollup -c",
     "report-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
@@ -25,11 +25,11 @@
   "keywords": [
     "react",
     "highlight",
+    "react-highlight",
     "highlight text",
-    "medium",
     "medium highlight",
     "medium text highlight",
-    "share",
+    "highlight-share",
     "popover"
   ],
   "author": "Luqman Olushi <olushilukmon03@gmail.com> (https://codeshifu.github.io/)",
@@ -46,7 +46,9 @@
     "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "24.1.0",
+    "commitizen": "3.0.5",
     "coveralls": "3.0.2",
+    "cz-conventional-changelog": "2.1.0",
     "eslint": "5.13.0",
     "eslint-plugin-react": "7.12.4",
     "jest": "24.1.0",
@@ -58,7 +60,8 @@
     "rollup": "1.1.2",
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-eslint": "5.0.0",
-    "rollup-plugin-postcss": "2.0.3"
+    "rollup-plugin-postcss": "2.0.3",
+    "rollup-plugin-terser": "4.0.4"
   },
   "peerDependencies": {
     "react": "16.x"
@@ -73,6 +76,11 @@
     },
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }

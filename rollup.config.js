@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 import { eslint } from 'rollup-plugin-eslint';
+import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
 const sourcemap = true;
@@ -13,6 +14,7 @@ export default {
     babel({
       exclude: 'node_modules/**'
     }),
+    terser(),
     eslint({ throwOnError: true }),
   ],
   output: [
