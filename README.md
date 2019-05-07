@@ -79,4 +79,4 @@ children|node| The text/group of text that's highlightable
 7. Raise a Pull Request
 
 ## License
-[MIT](https://github.com/codeshifu/react-highlight-pop/blob/master/LICENSE.md)
+**react-highlight-pop** is licensed under [MIT](https://github.com/codeshifu/react-highlight-pop/blob/master/LICENSE.md)
